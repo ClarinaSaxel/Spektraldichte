@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Einleitung}{3}{0}{1}
+\beamer@sectionintoc {2}{Numerische Methoden zur Schätzung der Spektraldichte}{10}{0}{2}
+\beamer@sectionintoc {3}{Qualitätbewertung der Annäherungen}{10}{0}{3}
+\beamer@sectionintoc {4}{Schluss}{20}{0}{4}
