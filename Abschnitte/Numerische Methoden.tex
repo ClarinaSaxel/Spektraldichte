@@ -1,0 +1,18 @@
+\begin{frame}
+    \frametitle{Einführung}
+    \begin{itemize}
+        \item Zwei Klassen, KPM und Lanczos-Spektrokopieverfahren
+        \item Zwei Methoden sind äquivalent zur KPM
+        \item Die andere Klasse basiert auf der partiellen Tridiagonalisierung
+        \item Zwei Methoden, Gaußscher und Lorentzscher Weichzeichnung (Regularisierung)
+        \item Alle Methoden benutzen eine stochastische Sampling-Methode, die auf folgendem Resultat basiert:
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Theorem}
+    Sei $A \in \R^{n \times n}$ mit Spektralzerlegung $A = \sum_{j = 1}^n \lambda_j u_j u_j^T$ wobei $u_iu_j^T = \delta_{ij}$.\\
+    Sei außerdem $v \in \R^n$ mit $v = \sum_{j=1}^n \beta_j u_j$\\
+    Gilt $v_i \sim \mathcal{N}(0, 1)$ i.i.d. für die Komponenten $\{v_i\}_{i = 1}^n$ von $v$, also $\E[v] = 0$ und $\E[vv^T] = \1_n$, dann
+    $$\E[\beta_i \beta_j] = \delta_{ij}, \quad i,j \in \N_1^n$$
+\end{frame}
