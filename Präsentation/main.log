@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  24 JUN 2024 17:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  28 JUN 2024 22:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/main.tex"
-(/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/main.tex
+**"/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/Präsentation/main.tex"
+(/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/Präsentation/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2023/02/20 v3.69 A class for typesetting presentations
@@ -574,24 +574,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -646,7 +646,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 35.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -667,14 +667,14 @@ Dictionary: translator-theorem-dictionary, Language: English
 <Uni Potsdam.png, id=30, 174.6525pt x 174.6525pt>
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 38.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 39.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Uni Potsdam.png>] (./main.toc)
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 42.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 43.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [2
 
@@ -753,78 +753,106 @@ Package pdftex.def Info: Uni Potsdam.png  used on input line 18.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [11
 
-]) (./Abschnitte/Qualitätsanalyse.tex
+]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 10.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 30.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [12
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 15.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 43.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [13
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 24.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 57.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [14
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 37.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 67.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [15
 
-]
+]) (./Abschnitte/Qualitätsanalyse.tex
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 48.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 10.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [16
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 57.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 15.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [17
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 68.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 24.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [18
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 83.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 37.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [19
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 93.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 48.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [20
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 103.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 57.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
  [21
 
 ]
-<screenshot.png, id=192, 604.2575pt x 417.56pt>
+File: Uni Potsdam.png Graphic file (type png)
+<use Uni Potsdam.png>
+Package pdftex.def Info: Uni Potsdam.png  used on input line 68.
+(pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
+ [22
+
+]
+File: Uni Potsdam.png Graphic file (type png)
+<use Uni Potsdam.png>
+Package pdftex.def Info: Uni Potsdam.png  used on input line 83.
+(pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
+ [23
+
+]
+File: Uni Potsdam.png Graphic file (type png)
+<use Uni Potsdam.png>
+Package pdftex.def Info: Uni Potsdam.png  used on input line 93.
+(pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
+ [24
+
+]
+File: Uni Potsdam.png Graphic file (type png)
+<use Uni Potsdam.png>
+Package pdftex.def Info: Uni Potsdam.png  used on input line 103.
+(pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
+ [25
+
+]
+<screenshot.png, id=231, 604.2575pt x 417.56pt>
 File: screenshot.png Graphic file (type png)
 <use screenshot.png>
 Package pdftex.def Info: screenshot.png  used on input line 108.
@@ -833,28 +861,28 @@ File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
 Package pdftex.def Info: Uni Potsdam.png  used on input line 108.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
- [22
+ [26
 
  <./screenshot.png>]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
 Package pdftex.def Info: Uni Potsdam.png  used on input line 117.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
- [23
+ [27
 
 ]
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
 Package pdftex.def Info: Uni Potsdam.png  used on input line 127.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
- [24
+ [28
 
 ])
 File: Uni Potsdam.png Graphic file (type png)
 <use Uni Potsdam.png>
-Package pdftex.def Info: Uni Potsdam.png  used on input line 61.
+Package pdftex.def Info: Uni Potsdam.png  used on input line 62.
 (pdftex.def)             Requested size: 42.67963pt x 42.67912pt.
- [25
+ [29
 
 ]
 \tf@nav=\write6
@@ -871,18 +899,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7EDA9D88F4962407A0782A1E414C2B28;712.
  ) 
 Here is how much of TeX's memory you used:
- 22669 strings out of 476025
- 446257 string characters out of 5790017
- 1859388 words of memory out of 5000000
- 42570 multiletter control sequences out of 15000+600000
- 521978 words of font info for 73 fonts, out of 8000000 for 9000
+ 22789 strings out of 476025
+ 449369 string characters out of 5790017
+ 1860388 words of memory out of 5000000
+ 42682 multiletter control sequences out of 15000+600000
+ 522285 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,122p,510b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,122p,524b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 221790 bytes).
+Output written on main.pdf (29 pages, 233624 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

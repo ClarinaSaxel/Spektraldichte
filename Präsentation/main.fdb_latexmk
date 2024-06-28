@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1719244010 "/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/main.tex" "main.pdf" "main" 1719244012 0
-  "/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/main.tex" 1719243956 1379 d67d98a7e5252d35db70101cd3304d15 ""
+["pdflatex"] 1719606104 "/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/Präsentation/main.tex" "main.pdf" "main" 1719606106 0
+  "/Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/Präsentation/main.tex" 1719605047 1396 e59ef8411bfb7b328de2bc0f3ec9abad ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -216,14 +216,14 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1692781164 7883453 0f5c0121f2aba50963ba36d1cc7f3d12 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Abschnitte/Einleitung.tex" 1719243297 4210 35ea0e9ba81054ff42d5f0c5980a4f52 ""
-  "Abschnitte/Numerische Methoden.tex" 1719244010 943 71b90d4214b6fe61eb182b353f47ef91 ""
+  "Abschnitte/Numerische Methoden.tex" 1719606104 3124 715b081132efee58b5a883a549251745 ""
   "Abschnitte/Qualitätsanalyse.tex" 1719243525 6908 aea07160570cdc5a82dab91787be1a57 ""
   "Uni Potsdam.png" 1719223324 1728 b7f1047bee259a5ac55b6992aef2bfca ""
-  "main.aux" 1719244011 5675 bf87f655cf562025461a3252fdd3c800 "pdflatex"
-  "main.nav" 1719244011 3243 720ab30e40354156b37de24f6d3bf0e1 "pdflatex"
-  "main.out" 1719244011 712 7eda9d88f4962407a0782a1e414c2b28 "pdflatex"
-  "main.tex" 1719243956 1379 d67d98a7e5252d35db70101cd3304d15 ""
-  "main.toc" 1719244011 252 d7cac388f373df48b79252d1aff6e22c "pdflatex"
+  "main.aux" 1719606106 6187 f1cfa742ece99e80dec827d252e240d1 "pdflatex"
+  "main.nav" 1719606106 3611 3f8b791e0fd9ece5c3d93b21fc09e8e0 "pdflatex"
+  "main.out" 1719606106 712 7eda9d88f4962407a0782a1e414c2b28 "pdflatex"
+  "main.tex" 1719605047 1396 e59ef8411bfb7b328de2bc0f3ec9abad ""
+  "main.toc" 1719606106 252 8d3208d7ee52ac277895b1a21313693d "pdflatex"
   "screenshot.png" 1719237176 44453 48877fd3c48d65ea879b7aaa61ba84bf ""
   (generated)
   "main.aux"

@@ -1,8 +1,8 @@
-PWD /Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte
+PWD /Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/Präsentation
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/main.tex
+INPUT /Users/carinaseidel/Library/CloudStorage/OneDrive-Personal/Dokumente/Adulting/Uni/Mathematik Bachelor Uni Potsdam/Spektraldichte/Präsentation/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1379,6 +1379,23 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
