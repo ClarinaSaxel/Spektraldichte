@@ -65,3 +65,52 @@
     $$c := \frac{\lambda_{us} + \lambda_{os}}{2} \quad \text{und} \quad d := \frac{\lambda_{os} - \lambda_{us}}{2}$$
     Dann ist $B = \frac{A - c*\1_n}{d}$ eine Matrix mit Eigenwerten im Intervall $[-1, 1]$
 \end{frame}
+
+\begin{frame}
+    \frametitle{Erweiterung der Delta-Distribution}
+    Berechne zunächst
+    $$\hat{\phi}(t) = \sqrt{1 - t^2} \phi(t) = \sqrt{1 - t^2} \times \frac{1}{n} \sum_{j = 1}^n \delta(t - \lambda_j)$$
+    Nun erweitern wir
+    $$\hat{\phi}(t) = \sum_{k = 0}^{\infty} \mu_k T_k(t)$$
+    im Sinne von
+    $$\int \limits_{-1}^1 \hat{\phi}(t) g(t) \dt = \int \limits_{-1}^1 \sum_{k = 0}^{\infty} \mu_k T_k(t) g(t) \dt$$
+    für $g \in \SR$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Momentenmethode}
+    \begin{align*}
+        \mu_k &= \frac{2 - \delta_{k0}}{\pi} \int\limits_{-1}^1 \frac{1}{\sqrt{1 - t^2}} T_k(t) \hat\phi(t) \dt\\
+        &= \frac{2 - \delta_{k0}}{\pi} \int\limits_{-1}^1 \frac{1}{\sqrt{1 - t^2}} T_k(t) \sqrt{1 - t^2} \phi(t) \dt\\
+        &= \frac{2 - \delta_{k0}}{n \pi} \sum_{j = 1}^n T_k(\lambda_j)\\
+        &= \frac{2 - \delta_{k0}}{n \pi} \Spur(T_k(A))
+    \end{align*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Weitere Parameter}
+    Es folgt, dass
+    $$\zeta_k = \frac{1}{n_{vec}} \sum_{l = 1}^{n_{vec}} \left( v_0^{(l)} \right)^T T_k(A) v_0^{(l)}$$
+    ein guter Schätzer für $\Spur(T_k(A))$ ist und damit
+    $$\mu_k \approx \frac{2 - \delta_{k0}}{n \pi} \zeta_k$$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Berechnung der $\zeta_k$}
+    Sei im Folgenden $v_0 \equiv v_0^{(l)}$
+    Berechne nun
+    $$T_{k + 1}(A)v_0 = 2 A T_k(A) v_0 - T_{k - 1}(A) v_0$$
+    Für $v_k \equiv T_k(A)v_0$ gilt also, dass
+    $$v_{k + 1} = 2 A v_k - v_{k - 1}$$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Definition $\tilde{\phi}_M(t)$}
+    Sobald die $\{ \mu_k \}$ bestimmt sind, wäre die Erweiterung theoretisch durch
+    $$\phi(t) = \frac{1}{\sqrt{1 - t^2}} \hat{\phi}(t)$$
+    gegeben. Allerdings gilt
+    $$\lim \limits_{k \to \infty} \mu_k \to 0$$
+    und wir interessieren uns nur für $T_k(t)$ mit $k \leq M$\\
+    Daher schätzen wir $\phi$ durch
+    $$\tilde{\phi}_M(t) = \frac{1}{\sqrt{1 - t^2}} \sum_{k = 0}^{M} \mu_k T_k(t)$$
+\end{frame}

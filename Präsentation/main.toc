@@ -1,4 +1,3 @@
 \beamer@sectionintoc {1}{Einleitung}{3}{0}{1}
-\beamer@sectionintoc {2}{Numerische Methoden zur Schätzung der Spektraldichte}{10}{0}{2}
-\beamer@sectionintoc {3}{Qualitätsanalyse der Annäherungen}{16}{0}{3}
-\beamer@sectionintoc {4}{Schluss}{29}{0}{4}
+\beamer@sectionintoc {2}{Die Kernel-Polynom-Methode}{11}{0}{2}
+\beamer@sectionintoc {3}{Qualitätsanalyse der Annäherungen}{22}{0}{3}

@@ -1315,6 +1315,7 @@ INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
 INPUT ./Uni Potsdam.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -1340,6 +1341,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
@@ -1364,10 +1366,14 @@ INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
 INPUT ./Uni Potsdam.png
-INPUT ./Abschnitte/Numerische Methoden.tex
-INPUT Abschnitte/Numerische Methoden.tex
-INPUT ./Abschnitte/Numerische Methoden.tex
-INPUT Abschnitte/Numerische Methoden.tex
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Abschnitte/KPM.tex
+INPUT Abschnitte/KPM.tex
+INPUT ./Abschnitte/KPM.tex
+INPUT Abschnitte/KPM.tex
 INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
@@ -1383,7 +1389,6 @@ INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
 INPUT ./Uni Potsdam.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
@@ -1400,10 +1405,14 @@ INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
 INPUT ./Uni Potsdam.png
-INPUT ./Abschnitte/Qualitätsanalyse.tex
-INPUT Abschnitte/Qualitätsanalyse.tex
-INPUT ./Abschnitte/Qualitätsanalyse.tex
-INPUT Abschnitte/Qualitätsanalyse.tex
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
@@ -1430,6 +1439,10 @@ INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
 INPUT ./Uni Potsdam.png
+INPUT ./Abschnitte/Qualitätsanalyse.tex
+INPUT Abschnitte/Qualitätsanalyse.tex
+INPUT ./Abschnitte/Qualitätsanalyse.tex
+INPUT Abschnitte/Qualitätsanalyse.tex
 INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
@@ -1446,7 +1459,18 @@ INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
 INPUT ./Uni Potsdam.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT ./Uni Potsdam.png
+INPUT Uni Potsdam.png
+INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
@@ -1476,10 +1500,6 @@ INPUT ./Uni Potsdam.png
 INPUT ./Uni Potsdam.png
 INPUT Uni Potsdam.png
 INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
@@ -1488,9 +1508,11 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb

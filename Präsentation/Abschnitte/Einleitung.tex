@@ -4,13 +4,31 @@
         \item Eigenwerte einer Matrix sind in vielen Bereichen der Mathematik und Physik interessant
         \item Oftmals sind Matrizen zu groß um diese effizient zu berechnen
         \item Stattdessen berechnen wir die Spektraldichte (Density of States)
+        \item Der Einfachheit halber beschränken wir uns auf symmetrische, reelle Matrizen, die spärlich besetzt sind
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Delta Distribution}
-    Sei $\mathcal{E} = \Cinfty(\Omega)$ mit $0 \in \Omega \subset \K^n$\\
-    Dann ist $\delta: \mathcal{E} \to \K, f \mapsto f(0)$ mit $\delta(f) = \langle \delta, f \rangle = f(0)$\\
+    \frametitle{Distribution}
+    \begin{definition}[Funktional]
+        Sei $V$ ein $\R$-Vektorraum. Ein Funktional $T$ ist eine Abbildung $T: V \to \R$
+    \end{definition}
+    \begin{definition}[Distribution]
+        Sei $\emptyset \neq \Omega \subset \R^n$ offen. Sei $\mathcal{E}$ der Raum der \emph{Testfunktionen} über $\Omega$.\\
+        Eine Distribution $T$ ist eine Abbildung $T: \mathcal{E} \to \R$ wobei für alle $g, g_1, g_2, \{g_n\}_{n \in \N} \in \mathcal{E}$
+        mit $\lim\limits_{n \to \infty} g_n \to g$ gilt:
+        $$T(g_1 + \lambda g_2) = T(g_1) + \lambda T(g_2) \quad \text{und}\quad \lim\limits_{n \to \infty} T(g_n) \to T(g)$$
+        Kurz: Eine Distribution $T$ ist ein stetiges und lineares Funktional auf $\mathcal{E}$
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Delta-Distribution}
+    \begin{definition} [Delta-Distribution]
+        Sei $\mathcal{E} = \Cinfty(\Omega)$ mit $0 \in \Omega \subset \R^n$\\
+        Dann ist $\delta: \mathcal{E} \to \R, f \mapsto f(0)$ mit $\delta(f) = \langle \delta, f \rangle = f(0)$\\
+    \end{definition}
+    \vspace{5mm}
     Wichtige Eigenschaft:
     $$\int\limits_{-\infty}^{\infty} f(x) \delta(x-a) \dx = \int\limits_{-\infty}^{\infty} f(x) \delta(a-x) \dx = f(a) \implies \int\limits_{-\infty}^{\infty} \delta(x-a) = 1$$
 \end{frame}
@@ -32,10 +50,10 @@
     \begin{equation}
         \phi(t) = \frac{1}{n} \sum_{j=1}^{n} \delta(t - \lambda_j)
     \end{equation}
-    wobei $\delta$ die Dirac Verteilung und $\lambda_j$ die Eigenwerte von A in nicht-absteigender Reihenfolge sind.\\
-    Die Anzahl der Eigenwert in einem Intervall $[a, b]$ kann dann wie folgt ausgedrückt werden:
+    wobei $\delta$ die Delta-Distribution und $\lambda_j$ die Eigenwerte von A in nicht-absteigender Reihenfolge sind.\\
+    Die Anzahl der Eigenwerte in einem Intervall $[a, b]$ kann dann wie folgt ausgedrückt werden:
     \begin{equation} \label{eq:nuab}
-        \nu_{[a, b]} = \int\limits_a^b \sum \delta(t - \lambda_j) \dt \equiv \int\limits_a^b n \phi(t) \dt
+        \nu_{[a, b]} = \int\limits_a^b \sum_j \delta(t - \lambda_j) \dt \equiv \int\limits_a^b n \phi(t) \dt
     \end{equation}
 \end{frame}
 
