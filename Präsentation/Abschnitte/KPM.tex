@@ -1,44 +1,51 @@
 \begin{frame}
-    \frametitle{Einführung}
+    \frametitle{Kernel-Polynom-Methode (KPM)}
     \begin{itemize}
-        \item Zwei Klassen, KPM und Lanczos-Spektrokopieverfahren
-        \item Zwei Methoden sind äquivalent zur KPM
-        \item Die andere Klasse basiert auf der partiellen Tridiagonalisierung
-        \item Zwei Methoden, Gaußscher und Lorentzscher Weichzeichnung (Regularisierung)
-        \item Alle Methoden benutzen eine stochastische Sampling-Methode, die auf folgendem Resultat basiert:
+        \pause
+        \item Polynomiale Annäherung der Spektraldichte
+        \pause
+        \item Leitet Koeffizienten aus der Momentenmethode ab
+        \pause
+        \item Zwei eng verwandte Varianten
+        \pause
+        \item Benutzt stochastische Sampling-Methode, die auf folgendem Resultat basiert:
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Theorem}
-    Sei $A \in \R^{n \times n}$ mit Spektralzerlegung $A = \sum_{j = 1}^n \lambda_j u_j u_j^T$ wobei $u_iu_j^T = \delta_{ij}$.\\
-    Sei außerdem $v \in \R^n$ mit $v = \sum_{j=1}^n \beta_j u_j$\\
-    Gilt $v_i \sim \mathcal{N}(0, 1)$ i.i.d. für die Komponenten $\{v_i\}_{i = 1}^n$ von $v$, also $\E[v] = 0$ und $\E[vv^T] = \1_n$, dann
-    $$\E[\beta_i \beta_j] = \delta_{ij}, \quad i,j \in \N_1^n$$
+    \pause
+    \begin{theorem}
+        Sei $A = A^T \in \R^{n \times n}$ mit Spektralzerlegung $A = U \diag(\lambda_1, \dots, \lambda_n)U^T$ wobei $UU^T = \1_n$.\\
+        Sei außerdem $\beta, v \in \R^n$ mit $v = U\beta$\\
+        Gilt $v_i \sim \mathcal{N}(0, 1)$ i.i.d. für die Komponenten $\{v_i\}_{i = 1}^n$ von $v$, also $\E[v] = 0$ und $\E[vv^T] = \1_n$, dann
+        $$\E[\beta \beta^T] = \1_n$$
+    \end{theorem}
 \end{frame}
 
 \begin{frame}
     \frametitle{Beweisskizze}
+    \pause
     \begin{proof}[Beweis Theorem 1]
-        Für $U = \left[u_1, u_2, \dots, u_n\right]$ und $\beta = \left(\beta_1, \beta_2, \dots, \beta_n\right)^T$ gilt $v = U \beta$\\
-        Daher folgt, dass
-        $$\E[v] = \E[U\beta] = U\E[\beta] = 0 \implies \E[\beta] = 0$$
-        Weiterhin gilt, dass
-        $$\E[vv^T] = \E[(U\beta)(U\beta)^T] = \E[U\beta \beta^TU^T] = U \E[\beta \beta^T]U^T = \1_n$$
-        woraus folgt, dass $\E[\beta \beta^T] = \1_n$
+        Es gilt
+        $$\E[v] = \pause \E[U\beta] = \pause U\E[\beta] = \pause 0 \pause \implies \E[\beta] = 0$$
+        \pause Weiterhin gilt, dass
+        $$\E[vv^T] = \pause \E[(U\beta)(U\beta)^T] = \pause \E[U\beta \beta^TU^T] = \pause U \E[\beta \beta^T]U^T = \pause \1_n$$
+        \pause Hieraus folgt, dass $\E[\beta \beta^T] = \1_n$
     \end{proof}
 \end{frame}
 
 \begin{frame}
     \frametitle{Resultat}
+    \pause
     Sei $f(A)$ eine Matrixfunktion. Dann haben wir 
     \begin{align*}
         \E\left[v^Tf(A)v\right] & = \E\left[(U\beta)^Tf(U\Lambda U^T)(U\beta)\right]\\
-        & = \E\left[\beta^TU^TUf(\Lambda)U^TU\beta\right]\\
-        & = \E\left[\beta^Tf(\Lambda)\beta\right]\\
-        & = \E\left[\sum_{j = 1}^n \beta_j^2 f(\lambda_j) \right]\\
-        & = \sum_{j = 1}^n f(\lambda_j) \E\left[ \beta_j^2 \right]\\
-        & = \sum_{j = 1}^n f(\lambda_j)
+         & = \E\left[\beta^TU^TUf(\Lambda)U^TU\beta\right]\\
+         & = \E\left[\beta^Tf(\Lambda)\beta\right]\\
+         & = \E\left[\sum_{j = 1}^n \beta_j^2 f(\lambda_j) \right]\\
+         & = \sum_{j = 1}^n f(\lambda_j) \E\left[ \beta_j^2 \right]\\
+         & = \sum_{j = 1}^n f(\lambda_j)
     \end{align*}
 \end{frame}
 
@@ -52,14 +59,18 @@
         (-1)^k \cosh(k \arcosh(-t))   & \quad \text{für } k < -1
     \end{cases}
     \]
+    \pause
     Es gilt außerdem die Rekursionsformel
     $$T_{k + 1}(t) = 2tT_k(t) - T_{k - 1}(t)$$
 \end{frame}
 
 \begin{frame}
     \frametitle{Transformation der Eigenwerte}
+    \pause
     Wir benutzen im Folgenden $T_k(t) = \cos(k \arccos(t))$ um die Dirac-Dichte zu erweitern.\\
+    \pause
     Wir müssen uns daher auf Matrizen beschränken, deren Eigenwerte im Intervall $[-1, 1]$ liegen.\\
+    \pause
     Seien daher $\lambda_{us}$ und $\lambda_{os}$ jeweils die untere bzw. obere Schranke für die Eigenwerte von $A$.
     Definiere
     $$c := \frac{\lambda_{us} + \lambda_{os}}{2} \quad \text{und} \quad d := \frac{\lambda_{os} - \lambda_{us}}{2}$$
@@ -113,4 +124,9 @@
     und wir interessieren uns nur für $T_k(t)$ mit $k \leq M$\\
     Daher schätzen wir $\phi$ durch
     $$\tilde{\phi}_M(t) = \frac{1}{\sqrt{1 - t^2}} \sum_{k = 0}^{M} \mu_k T_k(t)$$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Der Pseudocode}
+    \includegraphics[height = 6.15cm]{./Bilder/Pseudocode.png}
 \end{frame}

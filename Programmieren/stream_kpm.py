@@ -265,12 +265,11 @@ plt.show()""")
         # Anzeigen der Figur in Streamlit
         st.pyplot(st.session_state["fig"])
     
-    if "fig" in st.session_state:
-        if st.sidebar.button("Automatisch berechnen"):
-            A = generate_symmetric_matrix(st.session_state["n"])
-            A = shift_eigenvalues(A)
-            st.session_state["A"] = A
-            dos = kernel_polynomial_method(st.session_state["A"], st.session_state["t_points"], st.session_state["M"], st.session_state["n_vec"])
-            st.session_state["dos"] = dos
-            st.session_state["fig"] = generate_dos_plot(st.session_state["t_points"], st.session_state["dos"])
-            st.pyplot(st.session_state["fig"])
+    if st.sidebar.button("Automatisch berechnen"):
+        A = generate_symmetric_matrix(st.session_state["n"])
+        A = shift_eigenvalues(A)
+        st.session_state["A"] = A
+        dos = kernel_polynomial_method(st.session_state["A"], st.session_state["t_points"], st.session_state["M"], st.session_state["n_vec"])
+        st.session_state["dos"] = dos
+        st.session_state["fig"] = generate_dos_plot(st.session_state["t_points"], st.session_state["dos"])
+        st.pyplot(st.session_state["fig"])

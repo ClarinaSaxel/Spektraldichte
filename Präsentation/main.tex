@@ -5,11 +5,13 @@
 \usecolortheme{rose}
 \usepackage{mathtools}
 \usepackage{dsfont}
+\usepackage{multicol}
 \everymath{\displaystyle}
 \usefonttheme[onlymath]{serif}
 \beamertemplatenavigationsymbolsempty
 
 \DeclareMathOperator\arcosh{arcosh}
+\DeclareMathOperator\diag{diag}
 \DeclareMathOperator\Spur{Spur}
 
 \newcommand{\1}{\mathds{1}}
@@ -31,7 +33,7 @@
 \author{Carina Seidel}
 \institute[Universität Potsdam]{Universität Potsdam}
 \date[3. Juli 2024]{3. Juli 2024}
-\logo{\includegraphics[height = 1.5cm]{Uni Potsdam.png}}
+\logo{\includegraphics[height = 1.5cm]{./Bilder/Uni Potsdam.png}}
 
 \begin{document}
 
@@ -56,5 +58,7 @@
 \input{Abschnitte/Qualitätsanalyse.tex}
 
 \section{Auswertung}
+
+\input{Abschnitte/Numerische Ergebnisse.tex}
 
 \end{document}

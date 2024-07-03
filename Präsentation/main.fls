@@ -1206,6 +1206,17 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/dsfont.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/dsfont.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/dsfont.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/dsfont.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty
@@ -1294,28 +1305,23 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./main.toc
 INPUT main.toc
 INPUT main.toc
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
 INPUT ./Abschnitte/Einleitung.tex
 INPUT Abschnitte/Einleitung.tex
 INPUT ./Abschnitte/Einleitung.tex
 INPUT Abschnitte/Einleitung.tex
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -1341,43 +1347,149 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
 INPUT ./Abschnitte/KPM.tex
 INPUT Abschnitte/KPM.tex
 INPUT ./Abschnitte/KPM.tex
 INPUT Abschnitte/KPM.tex
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
@@ -1385,38 +1497,106 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -1431,81 +1611,113 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Pseudocode.png
+INPUT ./Bilder/Pseudocode.png
+INPUT ./Bilder/Pseudocode.png
+INPUT ./Bilder/Pseudocode.png
+INPUT ./Bilder/Pseudocode.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
 INPUT ./Abschnitte/Qualitätsanalyse.tex
 INPUT Abschnitte/Qualitätsanalyse.tex
 INPUT ./Abschnitte/Qualitätsanalyse.tex
 INPUT Abschnitte/Qualitätsanalyse.tex
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./screenshot.png
-INPUT ./screenshot.png
-INPUT screenshot.png
-INPUT ./screenshot.png
-INPUT ./screenshot.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT ./Uni Potsdam.png
-INPUT Uni Potsdam.png
-INPUT ./Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/screenshot.png
+INPUT ./Bilder/screenshot.png
+INPUT ./Bilder/screenshot.png
+INPUT ./Bilder/screenshot.png
+INPUT ./Bilder/screenshot.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Abschnitte/Numerische Ergebnisse.tex
+INPUT Abschnitte/Numerische Ergebnisse.tex
+INPUT ./Abschnitte/Numerische Ergebnisse.tex
+INPUT Abschnitte/Numerische Ergebnisse.tex
+INPUT ./Bilder/4.1.png
+INPUT ./Bilder/4.1.png
+INPUT ./Bilder/4.1.png
+INPUT ./Bilder/4.1.png
+INPUT ./Bilder/4.1.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/4.2.png
+INPUT ./Bilder/4.2.png
+INPUT ./Bilder/4.2.png
+INPUT ./Bilder/4.2.png
+INPUT ./Bilder/4.2.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
+INPUT ./Bilder/Uni Potsdam.png
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb

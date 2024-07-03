@@ -1,3 +1,4 @@
 \beamer@sectionintoc {1}{Einleitung}{3}{0}{1}
-\beamer@sectionintoc {2}{Die Kernel-Polynom-Methode}{11}{0}{2}
-\beamer@sectionintoc {3}{Qualitätsanalyse der Annäherungen}{22}{0}{3}
+\beamer@sectionintoc {2}{Die Kernel-Polynom-Methode}{32}{0}{2}
+\beamer@sectionintoc {3}{Qualitätsanalyse der Annäherungen}{65}{0}{3}
+\beamer@sectionintoc {4}{Auswertung}{78}{0}{4}
