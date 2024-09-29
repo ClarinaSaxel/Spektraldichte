@@ -1,0 +1,76 @@
+Um den Begriff der Spektraldichte zu definieren und zu verstehen, benötigen wir einige Definitionen vorab.
+Danach betrachten wir, warum die Berechnung der Spektraldichte nicht trivial ist.
+
+\section{Einführende Definitionen}
+
+\begin{definition}[Funktional]
+    Sei $V$ ein $\R$-Vektorraum. Ein \emph{Funktional} $T$ ist eine Abbildung $T: V \to \R$
+\end{definition}
+
+\begin{definition}[Distribution] \label{def:Distribution}
+    Sei $\emptyset \neq \Omega \subset \R^n$ offen.
+    Sei $\mathcal{E}$ der Raum der \emph{Testfunktionen} über $\Omega$.
+    Eine \emph{Distribution} $T$ ist eine Abbildung $T: \mathcal{E} \to \R$ wobei für alle
+    $g, g_1, g_2, \{g_n\}_{n \in \N} \in \mathcal{E}$
+    mit $\lim\limits_{n \to \infty} g_n \to g$ gilt:
+    $$T(g_1 + \lambda g_2) = T(g_1) + \lambda T(g_2) \quad \text{und}\quad \lim\limits_{n \to \infty} T(g_n) \to T(g)$$
+    Kurz: Eine Distribution $T$ ist ein stetiges und lineares Funktional auf $\mathcal{E}$
+\end{definition}
+
+\begin{definition}[Delta-Distribution]
+    Sei $\mathcal{E} = \Cinfty(\Omega)$ mit $0 \in \Omega \subset \R^n$.
+    Dann ist
+    $$\delta: \mathcal{E} \to \R, f \mapsto f(0) \quad \text{mit} \quad \delta(f) = \langle \delta, f \rangle = f(0)$$
+\end{definition}
+
+Bei dieser Definition ist die folgende wichtige Eigenschaft zu beachten:
+$$\int\limits_{-\infty}^{\infty} f(x) \delta(x-a) \dx = \int\limits_{-\infty}^{\infty} f(x) \delta(a-x) \dx = f(a) \implies \int\limits_{-\infty}^{\infty} \delta(x-a) \dx = 1$$
+Oftmals wir die Delta-Distribution auch als Delta-"Funktion"\,bezeichnet, obwohl es sich hierbei nicht um eine Funktion im eigentlichen Sinne handelt.
+
+Dies führt nun zur zentralen Definition des Papers:
+\begin{definition} [Spektraldichte]
+    Sei $A \in \R^{n \times n}$, $A^T = A$ und $A$ spärlich besetzt.
+    Dann ist die Spektraldichte definiert als 
+    $$\phi(t) = \frac{1}{n} \sum_{j=1}^{n} \delta(t - \lambda_j)$$
+    wobei $\delta$ die Delta-Distribution und $\lambda_j$ die Eigenwerte von A in nicht-absteigender Reihenfolge sind.
+\end{definition}
+
+Die Anzahl der Eigenwerte in einem Intervall $[a, b]$ kann dann wie folgt ausgedrückt werden:
+\begin{equation} \label{eq:nu_a_b}
+    \nu_{[a, b]} = \int\limits_a^b \sum_j \delta(t - \lambda_j) \dt \equiv \int\limits_a^b n \phi(t) \dt
+\end{equation}
+
+\begin{definition} [Schwartz-Raum über $\R$] \label{def:Schwartz-Raum}
+    Der Schwartz-Raum über $\R$ ist umfasst alle glatten Funktionen $f$,
+    die schnell genug gegen $0$ abfallen, wenn $|x|$ gegen unendlich geht. \cite{richtmyer}
+    In Formeln
+    $$\SR(\R) := \left\{f \in \Cinfty(\R) \mid \forall p, k \in \N_0: \sup_{x \in \R} \left| x^pf^{(k)}(x)\right| < \infty \right\}$$
+    Im Weiteren werde ich das Symbol $\SR$ als Abkürzung für $\SR(\R)$ benutzen,
+    da sich diese Arbeit allein mit dem reellen Kontext befasst.
+\end{definition}
+
+\section{Motivation und Problemstellung}
+Die Berechnung der Spektraldichte einer Matrix ist trivial, wenn die Eigenwerte bereits bekannt sind.
+Meistens ist das allerdings nicht der Fall,
+und die Berechnung der Eigenwerte bei sehr großen Matrizen ist zeit- und energieaufwendig.
+Gleichzeitig ist die DOS als eine Art Wahrscheinlichkeitsdichte über die Verteilung der Eigenwerte in vielen Anwendungen von großem Interesse.
+Es gibt also Bedarf an effizienten Methoden,
+die Spektraldichte möglichst kostengünstig abzuschätzen.
+Das Problem ist dabei, das $\phi(t)$ aufgrund der Delta-Distribution keine "Funktion"\,im eigentlichen Sinne ist,
+die man punktweise auswerten kann.\\
+Eine intuitive Idee wäre es zum Beispiel,
+ein Intervall $I \in \R$ zu wählen, sodass das Spektrum von A, $\sigma(A)$, eine Teilmenge von $I$ ist.
+Wähle nun $k$ Punkte $t_i$ aus $I$, sodass diese das Intervall in Teilintervalle unterteilen:
+$$\{t_i\}_{i = 1}^k \subset I \quad \text{mit} \quad \bigcup_{i = 1}^{k - 1} [t_i, t_{i+1}] = I$$
+Zähle nun die Eigenwerte in jedem Teilintervall.
+Berechne anschließend den Durchschnittswert von $\phi(t)$ in jedem Intervall mit $\nu_{[a, b]}$ aus Gleichung \ref{eq:nu_a_b}.
+Als Ergebnis erhält man Histogramme, die sich mit kleiner werdenden Teilintervallen, also größerem $k$ und $(t_{i+1} - t_i) \longrightarrow 0$, der Spektraldichte annähern.\\
+Hierbei gibt es leider ein Problem:
+Um die Eigenwerte in den Intervallen zu zählen, bedient man sich Hilfsmitteln wie zum Beispiel dem Sylvestreschen Trägheitssatz.
+Die Einzelheiten dieser Methode sind nicht Bestand dieser Arbeit,
+es wäre allerdings notwendig, eine Zerlegung $A - t_i I = LDL^T$ für alle $t_i$ zu berechnen \cite{golubvanloan}.
+Dies sind teure und zeitaufwendige Berechnungen und damit keine gute Lösung.
+Nur eine Prozedur, bei der $A$ mit Vektoren multipliziert wird, ist auch in größeren Dimensionen lohnenswert.\\
+Im Folgenden werden wir der Einfachheit halber immer annehmen, dass $A$ symmetrisch und reell ist.
+Die Erweiterung auf hermitesche Matrizen ist eine vergleichsweise einfache Angelegenheit.
+

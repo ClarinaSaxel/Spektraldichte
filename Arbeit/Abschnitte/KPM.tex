@@ -1,0 +1,176 @@
+\section{Überblick}
+Bei der sogenannten Kernel-Polynom-Methode, kurz KPM, handelt es sich vielmehr um eine Klasse von Methoden, die mehrere Varianten umfasst.
+Wir werden im Folgenden die allgemeine Herangehensweise betrachten.\\
+Wie der Name bereits nahelegt, ist die KPM eine polynomiale Erweiterung der Spektraldichte.
+Dabei werden die Koeffizienten der Polynome aus der Momentenmethode abgeleitet, um wie in der Statistik eine Schätzfunktion zu erhalten.
+Diese Methode beruht auf einem Resultat aus dem folgendem Theorem:
+
+
+\begin{theorem}
+    Sei $A = A^T \in \R^{n \times n}$ mit Spektralzerlegung
+    $$A = U \Lambda U^T \quad \text{wobei} \quad UU^T = \1_n \text{ und } \Lambda = \diag(\lambda_1, ..., \lambda_n)$$ 
+    Seien außerdem $\beta, v \in \R^n$ mit $v = U\beta$.\\
+    Gilt $v_i \sim_\text{i.i.d.} \mathcal{N}(0, 1)$ für die Komponenten $\{v_i\}_{i = 1}^n$ von $v$, also
+    \begin{equation} \label{eq:normalverteiltervektor}
+        \E[v] = 0 \text{ und } \E[vv^T] = \1_n \text{,}
+    \end{equation}
+    dann
+    $$\E[\beta \beta^T] = \1_n$$
+\end{theorem}
+
+
+\begin{proof}[Beweis Theorem 1]
+    Es gilt
+    $$\E[v] = \E[U\beta] = U\E[\beta] = 0 \implies \E[\beta] = 0$$
+    Weiterhin gilt, dass
+    $$\E[vv^T] = \E[(U\beta)(U\beta)^T] = \E[U\beta \beta^TU^T] = U \E[\beta \beta^T]U^T = \1_n$$
+    Hieraus folgt, dass $\E[\beta \beta^T] = \1_n$
+\end{proof}
+
+\vspace{0.5 cm}
+Dieses Theorem hat ein schönes Resultat, wenn man nun eine Matrixfunktion $f(A)$ betrachtet.
+Dann haben wir
+
+\begin{align*}
+    \E\left[v^Tf(A)v\right] = \E\left[(U\beta)^Tf(U\Lambda U^T)(U\beta)\right] & = \E\left[\beta^TU^TUf(\Lambda)U^TU\beta\right]\\
+        & = \E\left[\beta^Tf(\Lambda)\beta\right]\\
+        & = \E\left[\sum_{j = 1}^n \beta_j^2 f(\lambda_j) \right]\\
+        & = \sum_{j = 1}^n f(\lambda_j) \E\left[ \beta_j^2 \right]\\
+        & = \sum_{j = 1}^n f(\lambda_j)
+\end{align*}
+
+also zusammengefasst
+\begin{equation} \label{eq:theoremresultat}
+    \E\left[v^Tf(A)v\right] = \Spur(f(A))
+\end{equation}
+
+\section{Polynomiale Erweiterung durch Tschebyschev-Polynome}
+Aufgrund ihrer vielen einzigartigen Eigenschaften sind Tschebyschev-Polynome besonders gut zur polynomialen Erweiterung der Delta-Distribution geeignet.
+Mit Hilfe der trigonometrischen Funktionen können sie auch wie folgt ausgedrückt werden:
+\[ T_k(t) =
+\begin{cases}
+    \cos(k \arccos(t))            & \quad \text{für } k \in [-1, 1]\\
+    \cosh(k \arcosh(t))           & \quad \text{für } k > 1\\
+    (-1)^k \cosh(k \arcosh(-t))   & \quad \text{für } k < -1
+\end{cases}
+\]
+
+Wir benutzen im Folgenden nur die Formel $T_k(t) = \cos(k \arccos(t))$.
+Daher müssen wir uns auf Matrizen beschränken, deren Eigenwerte im Intervall $[-1, 1]$ liegen.
+Sollte diese Voraussetzung nicht erfüllt sein, kann man die Eigenwerte entsprechend transformieren.
+Seien dazu $\lambda_{us}$ und $\lambda_{os}$ jeweils die untere bzw. obere Schranke für die Eigenwerte von $A$.
+Definiere
+$$c := \frac{\lambda_{us} + \lambda_{os}}{2} \quad \text{und} \quad d := \frac{\lambda_{os} - \lambda_{us}}{2}$$
+Dann ist $B = \frac{A - c*\1_n}{d}$ eine Matrix mit Eigenwerten im Intervall $[-1, 1]$.
+Eine Veranschaulichung dazu ist im Anhang verlinkt.
+
+Tschebyschev-Polynome können zudem mit der Rekursionsformel
+$$T_{k + 1}(t) = 2tT_k(t) - T_{k - 1}(t)$$
+berechnet werden, wobei die Startbedingunen $T_0(t) = 1$ und $T_1(t) = x$ gelten.
+
+Beachte auch, dass das Resultat in Gleichung \ref{eq:theoremresultat} besagt, dass
+\begin{equation} \label{eq:Tschebyschev-Spur}
+    \E\left[v^TT_k(A)v\right] = \sum_{j = 1}^n T_k(\lambda_j) = \Spur(T_k(A))
+\end{equation}
+gilt. Dies ist zentral im weiteren Vorgehen.\\
+
+Sei nun
+\begin{equation} \label{eq:Gewichtsfunktion}
+    h(x) = \frac{1}{\sqrt{1 - t^2}}
+\end{equation}
+eine Gewichtsfunktion.
+Eine weitere Eigenschaft der Tschebyschev-Polynome ist, dass sie \emph{orthogonal} bezüglich des mit $h$ gewichteten Skalarproduktes
+
+$$\left \langle f, g \right \rangle = \int_{-1}^1 \frac{1}{\sqrt{1 - x^2}} \cdot f(x) \cdot g(x) \dx$$
+
+sind. Das bedeutet, dass
+
+$$\int_{-1}^1 \frac{1}{\sqrt{1 - t^2}} \cdot T_k(t) \cdot T_l(t) \dt =
+\begin{cases}
+    0               & \quad \text{für } k \neq l\\
+    \pi             & \quad \text{für } k = l = 0\\
+    \frac{\pi}{2}   & \quad \text{für } k = l \neq 0
+\end{cases}$$
+
+\section{Annäherung der Spektraldichte}
+Multipliziere nun die Spektraldichte mit dem Inversen der Gewichtsfunktion \ref{eq:Gewichtsfunktion}:
+$$\hat{\phi}(t) = \sqrt{1 - t^2} \phi(t) = \sqrt{1 - t^2} \times \frac{1}{n} \sum_{j = 1}^n \delta(t - \lambda_j)$$
+Sei nun $g \in \SR$, dem in Definition \ref{def:Schwartz-Raum} beschriebenen Schwartz-Raum,
+und $\mu_k \in \R$ Koeffizienten,
+die wir nachher berechnen, sodass die folgende Gleichung gilt:
+\begin{equation} \label{eq:Distributionsgleichheit}
+    \int \limits_{-1}^1 \hat{\phi}(t) g(t) \dt = \int \limits_{-1}^1 \sum_{k = 0}^{\infty} \mu_k T_k(t) g(t) \dt
+\end{equation}
+Gilt dies für beliebige $g \in \SR$, so vereinfachen wir Gleichung \ref{eq:Distributionsgleichheit} zu
+\begin{equation} \label{eq:Tschebyschev-Erweiterung}
+    \hat{\phi}(t) = \sum_{k = 0}^{\infty} \mu_k T_k(t)
+\end{equation}
+Nutze nun die Orthogonalität der Tschebyschev-Polynome aus, um einen bestimmten Koeffizienten $\mu_k$ zu berechnen:
+\begin{align*}
+    \sum_{l = 0}^{\infty} \mu_l T_l(t) = \hat{\phi}(t) & \implies \left(\sum_{l = 0}^{\infty} \mu_l T_l(t)\right) \cdot T_k(t) = \hat{\phi}(t) \cdot T_k(t)\\
+    & \implies \int_{-1}^1 \frac{1}{\sqrt{1 - t^2}} \cdot \left(\sum_{l = 0}^{\infty} \mu_l T_l(t)\right) \cdot T_k(t) \dt = \int_{-1}^1 \frac{1}{\sqrt{1 - t^2}} \cdot \hat{\phi}(t) \cdot T_k(t) \dt\\
+    & \implies \mu_k \cdot \frac{\pi}{2 - \delta_{k0}} = \int_{-1}^1 \frac{1}{\sqrt{1 - t^2}} \cdot \sqrt{1 - t^2} \cdot \phi(t) \cdot T_k(t) \dt\\
+    & \implies \mu_k = \frac{2 - \delta_{k0}}{\pi} \cdot \int_{-1}^1 \phi(t) \cdot T_k(t) \dt\\
+\end{align*}
+
+Durch Anwendung der Delta-Funktion erhält man:
+\begin{align*}
+    \mu_k = \frac{2 - \delta_{k0}}{\pi} \cdot \int_{-1}^1 \phi(t) \cdot T_k(t) \dt &= \frac{2 - \delta_{k0}}{\pi} \cdot \int_{-1}^1 \frac{1}{n} \sum_{j = 1}^n \delta(t - \lambda_j) \cdot T_k(t) \dt \\
+    &= \frac{2 - \delta_{k0}}{n \pi} \sum_{j = 1}^n T_k(\lambda_j)\\
+    &= \frac{2 - \delta_{k0}}{n \pi} \Spur(T_k(A))
+\end{align*}
+
+Sei nun $n_{vec} \in \R$ und $v_0^{(1)}, v_0^{(2)}, \dots, v_0^{(n_{vec})}$ Vektoren, die die Bedingungen aus dem Theorem erfüllen,
+also $\E[v_0^{(k)}] = 0$ und $\E\left[v_0^{(k)}\left(v_0^{(k)}\right)^T\right] = \1_n$.
+Aus Gleichung \ref{eq:Tschebyschev-Spur} folgt, dass
+$$\zeta_k = \frac{1}{n_{vec}} \sum_{l = 1}^{n_{vec}} \left( v_0^{(l)} \right)^T T_k(A) v_0^{(l)}$$
+ein guter Schätzer für $\Spur(T_k(A))$ ist und damit
+$$\mu_k \approx \frac{2 - \delta_{k0}}{n \pi} \zeta_k$$
+
+Um die $\zeta_k$ zu bestimmen, sei im Folgenden $v_0 \equiv v_0^{(l)}$
+Berechne nun mit Hilfe der Rekursionsformel für Tschebyschev-Polynome:
+$$T_{k + 1}(A)v_0 = 2 A T_k(A) v_0 - T_{k - 1}(A) v_0$$
+Für $v_k \equiv T_k(A)v_0$ gilt also, dass
+$$v_{k + 1} = 2 A v_k - v_{k - 1}$$
+
+Damit sind alle Bauteile zur Berechnung festgelegt und das Ziel der KPM erreicht:
+Anstatt rechenaufwendig Matrizen mit anderen Matrizen zu multiplizieren, müssen wir sie nur noch mit Vektoren multiplizieren.
+Nun können wir $\phi(t)$ beliebig nah annähren.
+Wie bereits erwähnt, ist eine unendlich genaue Annäherung nicht immer wünschenswert.
+Wegengilt
+$$\lim \limits_{k \to \infty} \mu_k \to 0$$
+und wir interessieren uns nur für $T_k(t)$ mit $k \leq M$\\
+Daher schätzen wir $\phi$ durch
+\begin{equation} \label{eq:Angenäherte Spektraldichte}
+    \tilde{\phi}_M(t) = \frac{1}{\sqrt{1 - t^2}} \sum_{k = 0}^{M} \mu_k T_k(t)
+\end{equation}
+\newline
+Der folgende Pseudocode basiert auf \cite[p.~10]{linsaadyang14} und fasst die oben beschriebenen Schritte zusammen.
+Ich habe ihn selbst implementiert und im Anhang verlinkt.
+
+\begin{algorithm}
+    \caption{Die Kernel-Polynom-Methode}\label{alg:cap}
+    \begin{algorithmic}[5]
+    \Require $A = A^T \in \R^{n \times n}$ mit Eigenwerten aus dem Intervall $[-1, 1]$
+    \Ensure Geschätzte Spektraldichte \{$\tilde{\phi}_M(t_i)$\}\\
+    \For{$k = 0 : M$}
+    \State $\zeta_k \gets 0$
+    \EndFor
+    \For{$l = 1 : n_{\text{vec}}$}
+    \State $\text{Wähle einen neuen zufälligen Vektor } v_0^{(l)}\text{;}$ \Comment{$v_{0_i}^{(l)} \sim_\text{ i.i.d. } \mathcal{N}(0, 1)$}
+    \For{$k = 0 : M$}
+    \State $\text{Berechne } \zeta_k \gets \zeta_k + \left( v_0^{(l)} \right)^T v_k{(l)}\text{;}$  
+    \If{$k = 0$}
+    \State $v_1^{(l)} \gets A v_0^{(l)}$
+    \Else
+    \State $v_{k+1}^{(l)} \gets 2 A v_k^{(l)} - v_{k-1}^{(l)}$ \Comment{Drei-Term-Rekursion}
+    \EndIf
+    \EndFor
+    \EndFor
+    \For{$k = 0 : M$}
+    \State $\zeta_k \gets \frac{\zeta_k}{n_{\text{vec}}}$
+    \State $\mu_k \gets \frac{2 - \delta_{k0}}{n \pi} \zeta_k$
+    \EndFor
+    \State $\text{Werte } \tilde{\phi}_M(t_i) \text{ mit Gleichung } \ref{eq:Angenäherte Spektraldichte} \text{ aus} $
+    \end{algorithmic}
+\end{algorithm}

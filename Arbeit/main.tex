@@ -1,0 +1,120 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[affil-it]{authblk}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage[german=quotes]{csquotes}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newtheoremstyle{mydefinition} % Name des neuen Stils
+  {10pt} % Raum über der Definition
+  {10pt} % Raum unter der Definition
+  {} % Körper-Schriftart (leer bedeutet Standard)
+  {0pt} % Einrückung (kein Einrücken)
+  {\bfseries} % Kopf-Schriftart
+  {.} % Kopf-Punktierung
+  { } % Kopf-Abstand
+  {} % Kopf-Spezifikation (leer bedeutet Standard)
+
+% Verwende den neuen Theoremstil
+\theoremstyle{mydefinition}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\newcommand{\1}{\mathds{1}}
+\newcommand{\dt}{\;\mathrm{d}t}
+\newcommand{\dx}{\;\mathrm{d}x}
+\newcommand{\Cinfty}{\mathcal{C}^{\infty}}
+\newcommand{\im}{\text{Im}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\SR}{\mathcal{S}}
+
+\renewcommand{\mid}{\;\middle|\;}
+
+\DeclareMathOperator\diag{diag}
+\DeclareMathOperator\arcosh{arcosh}
+\DeclareMathOperator\Spur{Spur}
+
+\begin{document}
+
+\input{Abschnitte/Titelseite.tex}
+
+\newpage
+
+\begin{abstract}
+Die Spektraldichte einer Matrix,
+auf Englisch auch Density of States (DOS) genannt,
+gibt die Wahrscheinlichkeit für Eigenwerte nahe eines Punktes $p \in \R$ an.
+Dies ist in vielen Bereichen der Physik, wie zum Beispiel der Quantenmechanik, von Interesse. 
+Da Matrizen oft zu groß sind, um Eigenwerte effizient zu berechnen, gibt es verschiedene Methoden, sich der Spektraldichte anzunähern.
+Eine solche Methode ist die Kernel-Polynom-Methode, das Hauptthema dieses Berichts.\\
+Der Ausgangspunkt für diese Arbeit ist das Paper \textsc{Approximating Spectral Densities of Large Matrices} von Lin Lin, Yousef Saad, and Chao Yang \cite{linsaadyang14}.
+Meine eigene Arbeit war das Ergänzen und weitere Ausarbeiten einiger Definitionen, Erklärungen und Beweise zum besseren Verständnis sowie die Übersetzung ins Deutsche.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Einleitung}
+\input{Abschnitte/Einleitung.tex}
+
+\chapter{Kernel-Polynom-Methode (KPM)}
+\input{Abschnitte/KPM.tex}
+
+\chapter{Qualitätsanalyse}
+\input{Abschnitte/Qualitätsanalyse.tex}
+\newpage
+
+\chapter{Anhang}
+Hier ist der Link zu meinem GitHub Repository,
+in dem sich zusätzlich zu sämtlichen Latex Dateien für sowohl diese Arbeit als auch die Präsentation,
+ausführbarer, selbstgeschriebener Python-Code zur Kernel-Polynom-Methode befindet.
+\url{https://github.com/ClarinaSaxel/Spektraldichte}
+
+\bibliographystyle{plain}
+
+\begin{thebibliography}{9}
+    
+    \bibitem{linsaadyang14}
+    \textsc{Lin Lin, Youssef Saad and Chao Yang},
+    \textit{Approximating Spectral Densities of Large Matrices},
+    \url{https://arxiv.org/pdf/1308.5467v2}\\
+    5. Oktober 2014.
+
+    \bibitem{golubvanloan}
+    \textsc{G. H. Golub und C. F. Van Loan},
+    \textit{Matrix Computations, 4th Edition},
+    Johns Hopkins University Press,
+    Baltimore, MD, 3rd ed.,
+    2013
+
+    \bibitem{richtmyer}
+    \textsc{R. D. Richtmyer},
+    \textit{Principles of advanced mathematical physics},
+    vol 1, Springer Verlag,
+    New York,
+    1981
+  
+\end{thebibliography}
+\end{document}

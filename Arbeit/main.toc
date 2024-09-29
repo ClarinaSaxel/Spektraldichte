@@ -1,0 +1,14 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Einführende Definitionen}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Motivation und Problemstellung}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Kernel-Polynom-Methode (KPM)}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Überblick}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Polynomiale Erweiterung durch Tschebyschev-Polynome}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Annäherung der Spektraldichte}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Qualitätsanalyse}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Der Begriff der Auflösung}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Einschränkung des Schwartz-Raums}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Regularisierung der $\delta $-Distribution}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Die Bedingung der Nicht-Negativität}{14}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Anhang}{15}{chapter.4}%
